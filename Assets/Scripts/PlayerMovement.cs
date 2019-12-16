@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
+    public GameObject flashLight;
+
     // Private atributes
     float x, z;
     Vector3 move;
@@ -42,5 +44,17 @@ public class PlayerMovement : MonoBehaviour
         vel.y += gravity * Time.deltaTime;
 
         contr.Move(vel * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (flashLight.activeSelf)
+            {
+                flashLight.SetActive(false);
+            }
+            else
+            {
+                flashLight.SetActive(true);
+            }
+        }
     }
 }
