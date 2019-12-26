@@ -27,8 +27,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.40873706, y: 0.3920374, z: 0.39081204}
-  m_Center: {x: 0.00095415115, y: 0.18746388, z: 0.012969792}
+  m_Size: {x: 0.40873706, y: 0.37064803, z: 0.39081204}
+  m_Center: {x: 0.00095415115, y: 0.19815856, z: 0.012969792}
 --- !u!1001 &8067247041998399094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,7 +38,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1539670057441874, guid: 55787d8c0810f6d43881fc1fe3a229a2, type: 3}
       propertyPath: m_Name
-      value: PrefabDelCajon
+      value: PrefabDelCajon Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4695067885090292, guid: 55787d8c0810f6d43881fc1fe3a229a2, type: 3}
       propertyPath: m_LocalPosition.x
