@@ -18,6 +18,16 @@ namespace FMODUnity
         public float OverrideMinDistance = -1.0f;
         public float OverrideMaxDistance = -1.0f;
 
+        // Occlusion
+
+        /*public bool occlusionEnabled = false;
+        public string occlusionParName = null;
+
+        [Range(0.0f, 10.0f)]
+        public float occlusionIntensity = 1.0f;
+        public float currentOcc = 0.0f;
+        public float nextUpdate = 0.0f;*/
+
         protected FMOD.Studio.EventDescription eventDescription;
         public  FMOD.Studio.EventDescription EventDescription { get { return eventDescription; } }
 
@@ -218,5 +228,22 @@ namespace FMODUnity
             }
             return false;
         }
+
+        /*private void Update()
+        {
+            if (instance.isValid())
+            {
+                if (!occlusionEnabled)
+                {
+                    currentOcc = 0.0f;
+                }
+                else if (Time.time >= nextUpdate)
+                {
+                    nextUpdate = Time.time + FmodResonanceAudio.occlusionDetectionInterval;
+                    currentOcc = occlusionIntensity * FmodResonanceAudio.ComputeOcclusion(transform);
+                    instance.setParameterByName(occlusionParName, currentOcc);
+                }
+            }
+        }*/
     }
 }

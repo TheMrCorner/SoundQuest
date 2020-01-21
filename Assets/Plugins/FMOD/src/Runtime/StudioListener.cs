@@ -10,6 +10,9 @@ namespace FMODUnity
 
         public int ListenerNumber = -1;
 
+        // More modifications
+        //public LayerMask occlusionMask = -1;
+
         void OnEnable()
         {
             RuntimeUtils.EnforceLibraryOrder();

@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Sound/SoundQuestFMOD/SoundQuestFMOD.fspro
-  sourceBankPath: Assets\Sound\SoundQuestFMOD\Build
+  sourceProjectPath: Assets\Sound\SoundQuest (FMOD Project)\SoundQuest (FMOD Project).fspro
+  sourceBankPath: Assets\Sound\SoundQuest (FMOD Project)\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

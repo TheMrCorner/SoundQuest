@@ -259,4 +259,58 @@ public static class FmodResonanceAudio {
 
   // FMOD Resonance Audio Listener Plugin.
   private static FMOD.DSP listenerPlugin;
+
+    // Adding some personal changes
+    /*public static Transform ListenerTransform
+    {
+        get
+        {
+            if(ListenerTransform == null)
+            {
+                var listener = GameObject.FindObjectOfType<StudioListener>();
+                if(listener != null)
+                {
+                    listenerTransform = listener.transform;
+                }
+            }
+            return listenerTransform;
+        }
+    }
+
+    private static Transform listenerTransform = null;
+
+    public static float ComputeOcclusion(Transform sourceTransform)
+    {
+        var listener = GameObject.FindObjectOfType<StudioListener>();
+
+        occlusionMaskValue = listener.occlusionMask;
+
+        float occlusion = 0.0f;
+
+        if(ListenerTransform != null)
+        {
+            Vector3 pos = ListenerTransform.position;
+
+            Vector3 sourceDistanceFromListener = sourceTransform.position - pos;
+
+            int numHits = Physics.RaycastNonAlloc(pos, sourceDistanceFromListener, occlusionHits, sourceDistanceFromListener.magnitude, occlusionMaskValue);
+
+            for (int i = 0; i < numHits; i++)
+            {
+                if(occlusionHits[i].transform != listenerTransform && occlusionHits[i].transform != sourceTransform)
+                {
+                    occlusion += 1.0f;
+                }
+            }
+        }
+        return occlusion; 
+    }
+
+    public const int maxNumOccHits = 12;
+
+    private static RaycastHit[] occlusionHits = new RaycastHit[maxNumOccHits];
+
+    private static int occlusionMaskValue = -1;
+
+    public const float occlusionDetectionInterval = -0.2f;*/
 }
