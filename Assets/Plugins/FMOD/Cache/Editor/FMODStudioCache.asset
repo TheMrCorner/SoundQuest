@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9069024291489719993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OcclusionTest/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 10
+  Max: 22000
+  Default: 22000
+  Exists: 1
 --- !u!114 &-8986008698092031433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +86,40 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-8534032445322312757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Engine/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 10
+  Max: 22000
+  Default: 22000
+  Exists: 1
+--- !u!114 &-8400556466429125910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambient/Ambient
+  m_EditorClassIdentifier: 
+  Name: Ambient
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8120589134633037920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,6 +136,23 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+  Exists: 1
+--- !u!114 &-7762072507857422151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Engine/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0.5
   Exists: 1
 --- !u!114 &-7529453776176266742
 MonoBehaviour:
@@ -226,12 +294,12 @@ MonoBehaviour:
   Path: event:/Ambient
   guid: 780419ebedb49e4cb77ff7125f7a875a
   Banks:
-  - {fileID: 3784868276446170560}
+  - {fileID: -1773332010847997399}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -6613544054134063129}
+  - {fileID: -8400556466429125910}
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
@@ -318,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Sound/SoundQuest (FMOD Project)/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637152052528149270
+  lastModified: 637153770346903045
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -595,6 +663,24 @@ MonoBehaviour:
   Max: 1
   Default: 0.5
   Exists: 0
+--- !u!114 &-1773332010847997399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/SoundQuest (FMOD Project)/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637153770346444298
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1695212378357874412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,13 +732,13 @@ MonoBehaviour:
   Path: event:/Engine
   guid: 6d428cd30ba3ea4eb561c72b96d83f57
   Banks:
-  - {fileID: 3784868276446170560}
+  - {fileID: -1773332010847997399}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -8660889168153195484}
-  - {fileID: -4252643027153009665}
+  - {fileID: -7762072507857422151}
+  - {fileID: -8534032445322312757}
   MinDistance: 1
   MaxDistance: 20
   Length: 39514
@@ -792,13 +878,13 @@ MonoBehaviour:
   Path: event:/OcclusionTest
   guid: fa0f435e9abeaa4ca2ff1f67a5f1dd00
   Banks:
-  - {fileID: 3784868276446170560}
+  - {fileID: -1773332010847997399}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 7376675033444059420}
-  - {fileID: -7529453776176266742}
+  - {fileID: 7529875434393087576}
+  - {fileID: -9069024291489719993}
   MinDistance: 1
   MaxDistance: 20
   Length: 166008
@@ -857,17 +943,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -4826697885639688522}
-  - {fileID: 3784868276446170560}
+  - {fileID: -1773332010847997399}
   EditorEvents:
   - {fileID: -1470869919715444348}
   - {fileID: -5867885533248397842}
   - {fileID: -453909463834813823}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3784868276446170560}
+  - {fileID: -1773332010847997399}
   StringsBanks:
   - {fileID: -4826697885639688522}
-  stringsBankWriteTime: 637152052528149270
+  stringsBankWriteTime: 637153770346903045
   cacheVersion: 3
 --- !u!114 &558427901136134291
 MonoBehaviour:
@@ -1522,6 +1608,23 @@ MonoBehaviour:
   Default: 22000
   Exists: 0
 --- !u!114 &7376675033444059420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OcclusionTest/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0.5
+  Exists: 1
+--- !u!114 &7529875434393087576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

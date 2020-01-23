@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    List<GameObject> openBoxes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,17 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void addOpenBox(GameObject box)
+    {
+        openBoxes.Add(box);
+    }
+
+    public void removeOpenBox(GameObject box)
+    {
+        if (openBoxes.Contains(box)){
+            openBoxes.Remove(box);
+        }
+    }
+
 }
