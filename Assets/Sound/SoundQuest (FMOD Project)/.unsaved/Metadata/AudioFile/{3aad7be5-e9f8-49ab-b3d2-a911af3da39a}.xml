@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3aad7be5-e9f8-49ab-b3d2-a911af3da39a}">
+		<property name="assetPath">
+			<value>FOOTSTEP - Metal Plate Run Barefoot Male - 12.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.27200000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0d16562a-2ae1-44ae-a42e-1e6c5aea8d8f}</destination>
+		</relationship>
+	</object>
+</objects>

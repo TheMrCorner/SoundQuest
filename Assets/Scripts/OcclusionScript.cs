@@ -26,6 +26,9 @@ public class OcclusionScript : MonoBehaviour
     public float lowPassFilter = 10000.0f;
     public LayerMask occlusionLayer = 1;
 
+    [Header("Listener Collider")]
+    public CapsuleCollider listenerCollider;
+
     private void Awake()
     {
         // Get the listener position
@@ -69,7 +72,7 @@ public class OcclusionScript : MonoBehaviour
         RaycastHit rc;
         Physics.Linecast(transform.position, listenerLocation.position, out rc, occlusionLayer);
 
-        if(rc.collider.name == "Player")
+        if(rc.collider == listenerCollider)
         {
             // Change occlusion
             NotOccluded();
