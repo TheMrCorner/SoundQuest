@@ -64,7 +64,6 @@ public class FMODFirstPersonFootSteps : MonoBehaviour
     /// </summary>
     void SpeedCheck()
     {
-        Debug.Log(timeSinceLastStep);
         if(timeSinceLastStep < startRunningTime)
         {
             running = 1;

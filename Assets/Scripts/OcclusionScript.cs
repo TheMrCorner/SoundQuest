@@ -70,7 +70,8 @@ public class OcclusionScript : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(audio, GetComponent<Transform>(), GetComponent<Rigidbody>());
 
         RaycastHit rc;
-        Physics.Linecast(transform.position, listenerLocation.position, out rc, occlusionLayer);
+        Debug.Log(this.transform.position);
+        Physics.Linecast(this.transform.position, listenerLocation.position, out rc, occlusionLayer);
 
         if(rc.collider == listenerCollider)
         {
