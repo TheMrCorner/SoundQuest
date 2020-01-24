@@ -28,15 +28,15 @@ public class musicBox : MonoBehaviour
                 gameObject.GetComponentInParent<Animation>().Play();
                 PlaySoundEffect("event:/BoxOpen");
                 open = true;
-                gm.addOpenBox(transform.parent.gameObject);
+                gm.addOpenBox(gameObject.transform.parent.gameObject);
             }
-            else
-            {
-                gameObject.GetComponentInParent<Animation>().CrossFade("Crate_Close");
-                PlaySoundEffect("event:/BoxClose");
-                open = false;
-                gm.removeOpenBox(transform.parent.gameObject);
-            }
+            //else
+            //{
+            //    gameObject.GetComponentInParent<Animation>().CrossFade("Crate_Close");
+            //    PlaySoundEffect("event:/BoxClose");
+            //    open = false;
+            //    gm.removeOpenBox(transform.parent.gameObject);
+            //}
         }
 
     }
