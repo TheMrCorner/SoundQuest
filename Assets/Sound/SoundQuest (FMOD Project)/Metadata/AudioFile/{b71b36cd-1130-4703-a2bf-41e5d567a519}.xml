@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="AudioFile" id="{35da7abf-1787-42dc-9b07-e4f10e790fbd}">
+	<object class="AudioFile" id="{b71b36cd-1130-4703-a2bf-41e5d567a519}">
 		<property name="assetPath">
-			<value>FOOTSTEP - Metal Plate Slide Barefoot Male - 11.wav</value>
+			<value>Apertura cajas.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>96</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.624</value>
+			<value>0.66955208333333338</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{0d16562a-2ae1-44ae-a42e-1e6c5aea8d8f}</destination>

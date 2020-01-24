@@ -26,12 +26,14 @@ public class musicBox : MonoBehaviour
             if (!open)
             {
                 gameObject.GetComponentInParent<Animation>().Play();
+                PlaySoundEffect("event:/BoxOpen");
                 open = true;
                 gm.addOpenBox(transform.parent.gameObject);
             }
             else
             {
                 gameObject.GetComponentInParent<Animation>().CrossFade("Crate_Close");
+                PlaySoundEffect("event:/BoxClose");
                 open = false;
                 gm.removeOpenBox(transform.parent.gameObject);
             }
@@ -39,12 +41,34 @@ public class musicBox : MonoBehaviour
 
     }
 
+    private void PlaySoundEffect(string effect)
+    {
+        // First create an instance of the event
+        FMOD.Studio.EventInstance jL = FMODUnity.RuntimeManager.CreateInstance(effect);
+
+        // Set the position where it is going to be played
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(jL, transform, GetComponent<Rigidbody>());
+
+        // Choose between jumping or landing and play
+        jL.start();
+
+        // Release that instance
+        jL.release();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other == player )
         {
-            
             playerInside = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other == player)
+        {
+            playerInside = false;
         }
     }
 
