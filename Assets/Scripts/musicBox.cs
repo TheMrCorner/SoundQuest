@@ -30,13 +30,13 @@ public class musicBox : MonoBehaviour
                 open = true;
                 gm.addOpenBox(gameObject.transform.parent.gameObject);
             }
-            //else
-            //{
-            //    gameObject.GetComponentInParent<Animation>().CrossFade("Crate_Close");
-            //    PlaySoundEffect("event:/BoxClose");
-            //    open = false;
-            //    gm.removeOpenBox(transform.parent.gameObject);
-            //}
+            else
+            {
+                gameObject.GetComponentInParent<Animation>().CrossFade("Crate_Close");
+                PlaySoundEffect("event:/BoxClose");
+                open = false;
+                //gm.removeOpenBox(transform.parent.gameObject);
+            }
         }
 
     }

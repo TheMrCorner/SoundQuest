@@ -73,6 +73,8 @@ public class OcclusionScript : MonoBehaviour
         Debug.Log(this.transform.position);
         Physics.Linecast(this.transform.position, listenerLocation.position, out rc, occlusionLayer);
 
+        Debug.Log(rc.collider.name);
+
         if(rc.collider == listenerCollider)
         {
             // Change occlusion
