@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     int finalDoor;
 
     //Instrumentos puestos al azar de momento para probar
-    string[] instruments = { "event:/violin", "event:/viola", "event:/acordeon", "event:/contrabajo", "event:/piano" };
+    string[] instruments = { "event:/violin1", "event:/violin2", "event:/viola", "event:/cello", "event:/piano" };
 
     //Doors y position
     Vector3 yChangeE;
@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviour
         doorsOnTop = false;
         initialPositionY = doorEast.transform.position.y;
         finalDoor = Random.Range(0, 4);
+
+        openBoxes = new Stack<GameObject>();
     }
 
     // Update is called once per frame

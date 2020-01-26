@@ -7,7 +7,7 @@ public class musicBox : MonoBehaviour
 
     bool playerInside = false;
     bool open = false;
-    GameManager gm;
+    public GameManager gm;
 
     [Header("Player Collider")]
     public CapsuleCollider player;
@@ -25,11 +25,11 @@ public class musicBox : MonoBehaviour
         {
             if (!open)
             {
-                gameObject.GetComponentInParent<Animation>().Play();
+                gameObject.GetComponent<Animation>().Play();
                 PlaySoundEffect("event:/BoxOpen");
                 open = true;
-                gm.addOpenBox(gameObject.transform.parent.gameObject);
-
+                
+                gm.addOpenBox(gameObject);
             }
             //else
             //{
