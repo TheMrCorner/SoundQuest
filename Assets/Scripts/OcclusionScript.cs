@@ -52,6 +52,8 @@ public class OcclusionScript : MonoBehaviour
         // Get LPF parameter description and set ID
         ed.getParameterDescriptionByName(parameterLPF, out pd);
         lpf = pd.id;
+
+        Debug.Log(selectAudio);
     }
 
     private void Start()
@@ -70,10 +72,10 @@ public class OcclusionScript : MonoBehaviour
         FMODUnity.RuntimeManager.AttachInstanceToGameObject(audio, GetComponent<Transform>(), GetComponent<Rigidbody>());
 
         RaycastHit rc;
-        Debug.Log(this.transform.position);
+        //Debug.Log(this.transform.position);
         Physics.Linecast(this.transform.position, listenerLocation.position, out rc, occlusionLayer);
 
-        Debug.Log(rc.collider.name);
+        //Debug.Log(rc.collider.name);
 
         if(rc.collider == listenerCollider)
         {
@@ -98,5 +100,11 @@ public class OcclusionScript : MonoBehaviour
     {
         audio.setParameterByID(vol, normalVolume);
         audio.setParameterByID(lpf, 22000f);
+    }
+
+    public string getAudio()
+    {
+        
+        return selectAudio;
     }
 }
