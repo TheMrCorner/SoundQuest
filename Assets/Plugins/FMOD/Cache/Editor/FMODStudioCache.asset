@@ -34,6 +34,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-8976760968047503011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Sound/SoundQuest (FMOD Project)/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637154905345351401
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8917737165705367371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +68,23 @@ MonoBehaviour:
   Min: 10
   Max: 22000
   Default: 22000
+  Exists: 1
+--- !u!114 &-8877970065402373182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0.5
   Exists: 1
 --- !u!114 &-8757228177531794804
 MonoBehaviour:
@@ -153,6 +188,23 @@ MonoBehaviour:
   Max: 1
   Default: 0.5
   Exists: 0
+--- !u!114 &-8397166340467559322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Footsteps
+  m_EditorClassIdentifier: 
+  Name: Footsteps
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8345799946937695840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -305,6 +357,23 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 1
+--- !u!114 &-6929420006435636629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OcclusionTest/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 10
+  Max: 22000
+  Default: 22000
   Exists: 1
 --- !u!114 &-6756233901861069976
 MonoBehaviour:
@@ -529,6 +598,23 @@ MonoBehaviour:
   Max: 22000
   Default: 22000
   Exists: 0
+--- !u!114 &-4926546904291437361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Engine/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 10
+  Max: 22000
+  Default: 22000
+  Exists: 1
 --- !u!114 &-4830022350644553280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,7 +734,7 @@ MonoBehaviour:
   Min: 10
   Max: 22000
   Default: 22000
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3700996448803489065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +750,7 @@ MonoBehaviour:
   Path: event:/ElectricStatic
   guid: 3428b2e07be8b9469de4bdf295adb52b
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -706,6 +792,23 @@ MonoBehaviour:
   Max: 1
   Default: 0.5
   Exists: 1
+--- !u!114 &-3493006887231075827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-3403237115609677434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,6 +825,23 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0.5
+  Exists: 1
+--- !u!114 &-3391183462020755334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Jump/JumpLand
+  m_EditorClassIdentifier: 
+  Name: JumpLand
+  Min: 0
+  Max: 2
+  Default: 0
   Exists: 1
 --- !u!114 &-3357187068711512632
 MonoBehaviour:
@@ -774,7 +894,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0.5
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2686490577237843809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +1011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Sound/SoundQuest (FMOD Project)/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637156594235514905
+  lastModified: 637154905346053336
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -930,6 +1050,23 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 1
+--- !u!114 &-2049378772532942845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OcclusionTest/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0.5
   Exists: 1
 --- !u!114 &-2033342537809159079
 MonoBehaviour:
@@ -1206,7 +1343,7 @@ MonoBehaviour:
   lastModified: 637156594234174915
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-318037985323269681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1256,7 +1393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -2093605956090692958}
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   EditorEvents:
   - {fileID: 4632421448519999836}
   - {fileID: 6772350028922522824}
@@ -1270,10 +1407,10 @@ MonoBehaviour:
   - {fileID: 8703351871639050475}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   StringsBanks:
   - {fileID: -2093605956090692958}
-  stringsBankWriteTime: 637156594235514905
+  stringsBankWriteTime: 637154905346053336
   cacheVersion: 3
 --- !u!114 &244364832472931128
 MonoBehaviour:
@@ -1326,6 +1463,23 @@ MonoBehaviour:
   Max: 1
   Default: 0.5
   Exists: 0
+--- !u!114 &864755658737130111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicTest/LPF
+  m_EditorClassIdentifier: 
+  Name: LPF
+  Min: 10
+  Max: 22000
+  Default: 22000
+  Exists: 1
 --- !u!114 &945573141176043913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,12 +1666,12 @@ MonoBehaviour:
   Path: event:/Jump
   guid: f95d3f86f4b64f48a2a68dac2bb054b0
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 8290271342002206781}
+  - {fileID: -3391183462020755334}
   MinDistance: 1
   MaxDistance: 20
   Length: 778
@@ -1570,13 +1724,13 @@ MonoBehaviour:
   Path: event:/OcclusionTest
   guid: fa0f435e9abeaa4ca2ff1f67a5f1dd00
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3955851294404089859}
-  - {fileID: -3855156056025594097}
+  - {fileID: -2049378772532942845}
+  - {fileID: -6929420006435636629}
   MinDistance: 1
   MaxDistance: 20
   Length: 166008
@@ -1613,7 +1767,7 @@ MonoBehaviour:
   Min: 10
   Max: 22000
   Default: 22000
-  Exists: 1
+  Exists: 0
 --- !u!114 &3056961417110408477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1664,7 +1818,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0.5
-  Exists: 1
+  Exists: 0
 --- !u!114 &3422767785664607814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,7 +1869,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3699591905361943694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,7 +1920,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0.5
-  Exists: 1
+  Exists: 0
 --- !u!114 &3988899618525031073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,13 +1936,13 @@ MonoBehaviour:
   Path: event:/Footsteps
   guid: ec3c60f71c17404c99d2b54ab83a377f
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 5678047242312154558}
-  - {fileID: 4354142964194297097}
+  - {fileID: -3493006887231075827}
+  - {fileID: -8397166340467559322}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1825,7 +1979,7 @@ MonoBehaviour:
   Min: 10
   Max: 22000
   Default: 22000
-  Exists: 1
+  Exists: 0
 --- !u!114 &4200732587611400799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1876,7 +2030,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4374324829649707108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,13 +2081,13 @@ MonoBehaviour:
   Path: event:/Engine
   guid: 6d428cd30ba3ea4eb561c72b96d83f57
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -2760628744332336525}
-  - {fileID: 3002525880474889524}
+  - {fileID: 7224675875645623415}
+  - {fileID: -4926546904291437361}
   MinDistance: 1
   MaxDistance: 20
   Length: 39514
@@ -1954,6 +2108,23 @@ MonoBehaviour:
   Max: 1
   Default: 0.5
   Exists: 0
+--- !u!114 &5306741270942493811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambient/Ambient
+  m_EditorClassIdentifier: 
+  Name: Ambient
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &5438292518459046651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1969,7 +2140,7 @@ MonoBehaviour:
   Path: event:/DoorOpen
   guid: 192c77431dec3f4a818ab8b2d04806cc
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1993,7 +2164,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &5679931696704188658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,13 +2215,13 @@ MonoBehaviour:
   Path: event:/MusicTest
   guid: cb7d8afa14ab2144ab73e0450f0ad2d0
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 4117118540232427950}
-  - {fileID: 3374975964369454760}
+  - {fileID: 864755658737130111}
+  - {fileID: -8877970065402373182}
   MinDistance: 1
   MaxDistance: 20
   Length: 166008
@@ -2154,12 +2325,12 @@ MonoBehaviour:
   Path: event:/Ambient
   guid: 780419ebedb49e4cb77ff7125f7a875a
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3572576190614144742}
+  - {fileID: 5306741270942493811}
   MinDistance: 1
   MaxDistance: 20
   Length: 52283
@@ -2214,6 +2385,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &7224675875645623415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Engine/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  Min: 0
+  Max: 1
+  Default: 0.5
+  Exists: 1
 --- !u!114 &7276643615395272066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,7 +2486,7 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &8389703667685624133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2314,7 +2502,7 @@ MonoBehaviour:
   Path: event:/BoxOpen
   guid: 299921bdccd8b44c917111b7055acc10
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2405,7 +2593,7 @@ MonoBehaviour:
   Path: event:/BoxClose
   guid: 80b8aaacf5420544b9e94632ca7443cd
   Banks:
-  - {fileID: -392628589105514077}
+  - {fileID: -8976760968047503011}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
