@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{825c42bf-e4bc-4eda-856c-9ce845da5960}">
+		<property name="assetPath">
+			<value>marimba.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>424.48979591836735</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0d16562a-2ae1-44ae-a42e-1e6c5aea8d8f}</destination>
+		</relationship>
+	</object>
+</objects>

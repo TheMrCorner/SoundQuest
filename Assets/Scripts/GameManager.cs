@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject doorNorth;
     public GameObject doorWest;
     public GameObject doorSouth;
+    public string effect; 
 
     [Header("ExitTriggers")]
     public Collider eastTrigger;
@@ -50,7 +51,8 @@ public class GameManager : MonoBehaviour
         //Para probar
         if (Input.GetKeyDown(KeyCode.P))
         {
-            correctMelody = true; 
+            correctMelody = true;
+            compareMelody();
         }
 
         if (correctMelody && !doorsOnTop)
@@ -82,7 +84,7 @@ public class GameManager : MonoBehaviour
                 equals = false;
             }
 
-            openBoxes.Peek().GetComponent<Animation>().CrossFade("Crate_Close");
+            openBoxes.Peek().GetComponent<musicBox>().CloseBox();
             openBoxes.Pop();
         }
 
@@ -94,21 +96,65 @@ public class GameManager : MonoBehaviour
             if (finalDoor == 0)
             {
                 Instantiate(emiter, eastTrigger.transform);
+
+                eastTrigger.GetComponent<ExitTrigger>().setExit();
+
+                // First create an instance of the event
+                FMOD.Studio.EventInstance jL = FMODUnity.RuntimeManager.CreateInstance(effect);
+
+                // Set the position where it is going to be played
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(jL, emiter.transform, GetComponent<Rigidbody>());
+
+                // Choose between jumping or landing and play
+                jL.start();
+
+                eastTrigger.GetComponent<ExitTrigger>().setEventEmitter(jL);
             }
             else if (finalDoor == 1)
             {
                 Instantiate(emiter, northTrigger.transform);
+                northTrigger.GetComponent<ExitTrigger>().setExit();
+
+                // First create an instance of the event
+                FMOD.Studio.EventInstance jL = FMODUnity.RuntimeManager.CreateInstance(effect);
+
+                // Set the position where it is going to be played
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(jL, emiter.transform, GetComponent<Rigidbody>());
+
+                // Choose between jumping or landing and play
+                jL.start();
+                northTrigger.GetComponent<ExitTrigger>().setEventEmitter(jL);
             }
             else if (finalDoor == 2)
             {
                 Instantiate(emiter, westTrigger.transform);
+                westTrigger.GetComponent<ExitTrigger>().setExit();
+
+                // First create an instance of the event
+                FMOD.Studio.EventInstance jL = FMODUnity.RuntimeManager.CreateInstance(effect);
+
+                // Set the position where it is going to be played
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(jL, emiter.transform, GetComponent<Rigidbody>());
+
+                // Choose between jumping or landing and play
+                jL.start();
+                westTrigger.GetComponent<ExitTrigger>().setEventEmitter(jL);
             }
             if (finalDoor == 3)
             {
                 Instantiate(emiter, southTrigger.transform);
-            }
+                southTrigger.GetComponent<ExitTrigger>().setExit();
 
-            emiter.AddComponent<OcclusionScript>();
+                // First create an instance of the event
+                FMOD.Studio.EventInstance jL = FMODUnity.RuntimeManager.CreateInstance(effect);
+
+                // Set the position where it is going to be played
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(jL, emiter.transform, GetComponent<Rigidbody>());
+
+                // Choose between jumping or landing and play
+                jL.start();
+                southTrigger.GetComponent<ExitTrigger>().setEventEmitter(jL);
+            }
         }
 
         return equals;

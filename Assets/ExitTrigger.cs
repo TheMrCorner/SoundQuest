@@ -9,6 +9,8 @@ public class ExitTrigger : MonoBehaviour
     public GameObject player;
     Vector3 originalPosition;
 
+    FMOD.Studio.EventInstance instance; 
+
     bool isExit;
 
     private void Start()
@@ -23,6 +25,8 @@ public class ExitTrigger : MonoBehaviour
         {
             if (isExit)
             {
+                instance.release();
+
                 //Ir a la escena de final
                 SceneManager.LoadScene(1);
             }
@@ -31,6 +35,11 @@ public class ExitTrigger : MonoBehaviour
                 player.transform.position = originalPosition;
             }
         }
+    }
+
+    public void setEventEmitter(FMOD.Studio.EventInstance st)
+    {
+        instance = st; 
     }
 
     public void setExit()

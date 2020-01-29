@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{17e6e187-e990-4064-aa32-d20695010067}">
+		<property name="assetPath">
+			<value>guitar.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>401.77199999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0d16562a-2ae1-44ae-a42e-1e6c5aea8d8f}</destination>
+		</relationship>
+	</object>
+</objects>

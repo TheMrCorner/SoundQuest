@@ -5156,6 +5156,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &590799935 stripped
@@ -5664,6 +5694,7 @@ MonoBehaviour:
   doorNorth: {fileID: 1619594055}
   doorWest: {fileID: 1632626632}
   doorSouth: {fileID: 1115798310}
+  effect: event:/
   eastTrigger: {fileID: 958074043}
   northTrigger: {fileID: 1981642472}
   westTrigger: {fileID: 1606342638}
@@ -8164,6 +8195,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: selectAudio
+      value: event:/Flute
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterVolume
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterLPF
+      value: LPF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &801876072 stripped
@@ -11366,6 +11442,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: selectAudio
+      value: event:/Guitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterVolume
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterLPF
+      value: LPF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &1159858011 stripped
@@ -12328,6 +12449,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: selectAudio
+      value: event:/Marimba
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterVolume
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterLPF
+      value: LPF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &1264514378 stripped
@@ -13600,6 +13766,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &1365340545 stripped
@@ -18657,7 +18853,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1845251321
 Transform:
   m_ObjectHideFlags: 0
@@ -19075,6 +19271,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: selectAudio
+      value: event:/Guitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterVolume
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterLPF
+      value: LPF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &1866259946 stripped
@@ -20497,6 +20738,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: selectAudio
+      value: event:/Cello
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterVolume
+      value: Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: parameterLPF
+      value: LPF
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &2023885856 stripped
@@ -20753,6 +21039,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 625475137}
+    - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 158441265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a, type: 3}
 --- !u!4 &2053242375 stripped
@@ -22214,6 +22530,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: listenerCollider
+      value: 
+      objectReference: {fileID: 158441265}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: occlusionVolume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: normalVolume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510510476456864137, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
+        type: 3}
+      propertyPath: lowPassFilter
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 2961216888736235786, guid: 6f2aebb5b46b3ed4182c8c9d65770c6a,
         type: 3}
